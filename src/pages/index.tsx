@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <div style={{display: "flex"}}>
-      <SideMenu setPage={setPage}/>
+      <SideMenu setPage={setPage} page={page}/>
       <Content page={handlePage()}/>
     </div>
   )

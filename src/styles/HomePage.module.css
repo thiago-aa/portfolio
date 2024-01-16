@@ -1,9 +1,16 @@
-@keyframes increaseWidth {
+.homeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
   from {
-    width: 0;
+    opacity: 0;
   }
   to {
-    width: 100%;
+    opacity: 100%;
   }
 }
 
@@ -21,9 +28,10 @@
 .name, .about {
   margin-top: 20px;
   font-size: 1.8rem;
-  z-index: 2;
+  opacity: 0;
+  /* z-index: 2; */
   font-weight: 600;
-  position: relative;
+  /* position: relative; */
 }
 
 .homeContainer p {
@@ -31,7 +39,7 @@
   line-height: 2.5rem;
 }
 
-.name::after {
+/* .name::after {
   z-index: 1;
   content: " ";
   position: absolute;
@@ -51,6 +59,27 @@
   height: 3px;
   animation: increaseWidth 0.8s ease-in forwards;
   animation-delay: 0.8s;
+} */
+
+
+.firstLine {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+.name {
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+.about {
+  animation: fadeIn 0.6s ease-in forwards;
+  animation-delay: 0.8s;
+}
+
+.lastLine {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in forwards;
+  animation-delay: 1.2s;
 }
 
 .homeContainer span {
@@ -79,36 +108,36 @@
   width: 0;
   height: 0;
   animation: growButton 0.5s ease-in forwards;
-  animation-delay: 1.6s;
+  animation-delay: 2s;
 }
 
 .githubButton {
   width: 0;
   height: 0;
   animation: growButton 0.5s ease-in forwards;
-  animation-delay: 2.1s;
+  animation-delay: 2.5s;
 }
 
 .codeButton {
   width: 0;
   height: 0;
   animation: growButton 0.5s ease-in-out forwards;
-  animation-delay: 2.6s;
-}
-
-.codeColor {
-  animation: showCode 0s ease-in-out forwards;
-  animation-delay: 3.1s;
-}
-
-.githubColor {
-  animation: showGitHub 0s ease-in-out forwards;
-  animation-delay: 2.6s;
+  animation-delay: 3s;
 }
 
 .linkedinColor {
   animation: showLinkedin 0s ease-in-out forwards;
-  animation-delay: 2.1s;
+  animation-delay: 2.5s;
+}
+
+.githubColor {
+  animation: showGitHub 0s ease-in-out forwards;
+  animation-delay: 3s;
+}
+
+.mailColor {
+  animation: showCode 0s ease-in-out forwards;
+  animation-delay: 3.4s;
 }
 
 @keyframes showCode {
@@ -116,7 +145,7 @@
     color: transparent
   }
   to {
-    color: #ff964f;
+    color: #FF6961;
   }
 }
 

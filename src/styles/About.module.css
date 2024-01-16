@@ -1,0 +1,21 @@
+.aboutContainer {
+  padding: 20px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  /* border: 1px red solid; */
+  font-size: 1rem;
+}
+.aboutContainer div {
+  margin: 30px;
+  box-shadow: -4px -4px 8px hsl(30, 10%, 96%, 0.8), 1px 2px 8px hsl(30, 10%, 80%);
+  padding: 17px;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.4rem;
+  /* width: 25%; */
+}

@@ -20,7 +20,7 @@
   overflow-y: auto;
 }
 
-.container a {
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,8 +35,24 @@
   cursor: pointer;
 }
 
-.container a:hover {
-  box-shadow: inset -1px -3px 3px hsl(30, 10%, 74%), inset 1px 3px 3px hsl(30, 10%, 74%);
+.button:hover {
+  box-shadow: inset -1px -3px 3px hsl(30, 10%, 96%), inset 1px 3px 3px hsl(30, 10%, 74%);
+}
+
+.buttonActivated {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 4vh;
+  width: 70%;
+  margin-top: 3vh;
+  color: #444;
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: -4px -4px 8px hsl(30, 10%, 94%, 0.8), 4px 4px 8px hsl(30, 10%, 82%, 0.8);
+  cursor: pointer;
+  box-shadow: inset -1px -3px 3px hsl(30, 10%, 96%), inset 1px 3px 3px hsl(30, 10%, 74%);
 }
 
 .container h1 {

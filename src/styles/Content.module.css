@@ -6,12 +6,8 @@
 }
 
 .container > div {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   height: 85%;
   width: 90%;
-  padding: 10px;
   border-radius: 8px;
   box-shadow:  inset -4px -4px 8px hsl(30, 10%, 87%), inset 4px 4px 8px hsl(30, 10%, 85%);
 }
