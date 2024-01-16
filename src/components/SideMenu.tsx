@@ -1,7 +1,12 @@
 import styles from '../styles/SideMenu.module.css'
 
+interface SideMenuProps {
+  setPage: (page: string) => void;
+}
 
-export default function SideMenu(){
+export default function SideMenu(props: SideMenuProps){
+  const {setPage} = props;
+
   return (
     <nav className={styles.container}>
       <div>
@@ -12,11 +17,11 @@ export default function SideMenu(){
           <h1>Thiago Alves de Almeida</h1>
           <h2>Desenvolvedor Front-End</h2>
         </p> */}
-        <a href="#sobre-mim">Home</a>
-        <a href="#sobre-mim">Sobre Mim</a>
-        <a href="#certificados">Certificados</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#projetos">Contato</a>
+        <a onClick={(e: any) => setPage(e.target.textContent)}>Home</a>
+        <a onClick={(e: any) => setPage(e.target.textContent)}>Sobre Mim</a>
+        <a onClick={(e: any) => setPage(e.target.textContent)}>Certificados</a>
+        <a onClick={(e: any) => setPage(e.target.textContent)}>Projetos</a>
+        <a onClick={(e: any) => setPage(e.target.textContent)}>Contato</a>
       </div>
     </nav>
   )

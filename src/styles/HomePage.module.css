@@ -1,0 +1,139 @@
+@keyframes increaseWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes growButton {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.name, .about {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  z-index: 2;
+  font-weight: 600;
+  position: relative;
+}
+
+.homeContainer p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.name::after {
+  z-index: 1;
+  content: " ";
+  position: absolute;
+  background-color: darkslateblue;
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  animation: increaseWidth 0.8s ease-in forwards;
+}
+
+.about::after {
+  content: " ";
+  position: absolute;
+  background-color: darkslateblue;
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  animation: increaseWidth 0.8s ease-in forwards;
+  animation-delay: 0.8s;
+}
+
+.homeContainer span {
+  width: 100%;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeContainer button {
+  border-radius: 100%;
+  border: none;
+  box-shadow: -4px -4px 8px hsl(30, 10%, 96%, 0.8), 1px 2px 8px hsl(30, 10%, 80%);
+  margin-bottom: 10px;
+  color: transparent;
+}
+
+.homeContainer button:hover {
+  box-shadow: inset -4px -4px 8px hsl(30, 10%, 96%, 0.8), inset 1px 2px 8px hsl(30, 10%, 70%);
+  cursor: pointer;
+}
+
+.linkedinButton {
+  width: 0;
+  height: 0;
+  animation: growButton 0.5s ease-in forwards;
+  animation-delay: 1.6s;
+}
+
+.githubButton {
+  width: 0;
+  height: 0;
+  animation: growButton 0.5s ease-in forwards;
+  animation-delay: 2.1s;
+}
+
+.codeButton {
+  width: 0;
+  height: 0;
+  animation: growButton 0.5s ease-in-out forwards;
+  animation-delay: 2.6s;
+}
+
+.codeColor {
+  animation: showCode 0s ease-in-out forwards;
+  animation-delay: 3.1s;
+}
+
+.githubColor {
+  animation: showGitHub 0s ease-in-out forwards;
+  animation-delay: 2.6s;
+}
+
+.linkedinColor {
+  animation: showLinkedin 0s ease-in-out forwards;
+  animation-delay: 2.1s;
+}
+
+@keyframes showCode {
+  from {
+    color: transparent
+  }
+  to {
+    color: #ff964f;
+  }
+}
+
+@keyframes showGitHub {
+  from {
+    color: transparent
+  }
+  to {
+    color: black;
+  }
+}
+
+@keyframes showLinkedin {
+  from {
+    color: transparent
+  }
+  to {
+    color: #0e76a8;
+  }
+}
