@@ -1,0 +1,25 @@
+.container {
+  background-color: hsl(30, 10%, 97%);
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 4vh;
+  margin-left: 10px;
+  background-color:hsl(30, 10%, 98%);
+  color: #444;
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: -4px -4px 8px hsl(30, 10%, 87%, 0.8), 4px 4px 8px hsl(30, 10%, 84%, 0.8);
+}
+
+.container a:hover {
+  box-shadow: inset -1px -3px 3px hsl(30, 10%, 74%), inset 1px 3px 3px hsl(30, 10%, 74%);
+}
