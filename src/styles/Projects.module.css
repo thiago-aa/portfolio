@@ -1,0 +1,37 @@
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectsContainer > div:first-child {
+  box-shadow:  inset -4px -4px 8px hsl(30, 10%, 87%), inset 4px 4px 8px hsl(30, 10%, 85%);
+  margin-top: 5%;
+  margin-bottom: 2%;
+  width: 85%;
+  height: 75%;
+  border-radius: 10px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.projectsContainer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 4vh;
+  color: #555;
+  padding: 5px 20px;
+  border-radius: 20px;
+  box-shadow: -4px -4px 8px hsl(30, 10%, 94%, 0.8), 4px 4px 8px hsl(30, 10%, 82%, 0.8);
+  cursor: pointer;
+}
+
+.projectsContainer button:hover {
+  box-shadow: inset -1px -3px 3px hsl(30, 10%, 96%), inset 1px 3px 3px hsl(30, 10%, 74%);
+}

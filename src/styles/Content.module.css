@@ -10,5 +10,6 @@
   width: 90%;
   border-radius: 8px;
   box-shadow:  inset -4px -4px 8px hsl(30, 10%, 87%), inset 4px 4px 8px hsl(30, 10%, 85%);
+  overflow-y: auto;
 }
 

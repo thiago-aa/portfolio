@@ -1,0 +1,41 @@
+.certificatesContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.certificatesContainer > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-grow: 1;
+}
+
+.certificatesContainer > div > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: inset -1px -3px 3px hsl(30, 10%, 84%), inset 1px 3px 3px hsl(30, 10%, 74%);
+}
+
+.certificatesContainer img {
+  width: 100%;
+  margin: 10px 0;
+  aspect-ratio: 16 / 11;
+}
+
+.certificatesContainer h2 {
+  font-size: 1.2rem;
+}
+
+.certificatesContainer p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.certificatesContainer a {
+  width: 60%;
+}

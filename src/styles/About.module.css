@@ -1,14 +1,14 @@
 .aboutContainer {
-  padding: 20px 40px;
+  padding: 15px;
   display: grid;
-  grid-template-columns: 1fr 1.2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   /* align-items: center; */
   justify-content: space-evenly;
   /* border: 1px red solid; */
   font-size: 1rem;
 }
-.aboutContainer div {
-  margin: 30px;
+.aboutContainer > div {
+  margin: 20px;
   box-shadow: -4px -4px 8px hsl(30, 10%, 96%, 0.8), 1px 2px 8px hsl(30, 10%, 80%);
   padding: 17px;
   border-radius: 10px;
@@ -18,4 +18,44 @@
   justify-content: center;
   line-height: 1.4rem;
   /* width: 25%; */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.aboutContainer p {
+  margin-top: 8px;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+  animation-delay: 0.5s;
+}
+
+.aboutContainer h2 {
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+.techsContainer {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech {
+  border-radius: 100%;
+  background: linear-gradient(145deg, hsl(30, 10%, 94%), hsl(30, 10%, 80%));
+  box-shadow:  5px 5px 60px hsl(30, 10%, 76%), -5px -5px 60px hsl(30, 10%, 96%);
+  padding: 14px;
+  margin: 8px;
+  font-size: 2rem;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+  animation-delay: 1s;
 }
