@@ -5,12 +5,26 @@
 }
 
 .projectsContainer > div:first-child {
+  display: flex;
+  align-items: center;
   box-shadow:  inset -4px -4px 8px hsl(30, 10%, 87%), inset 4px 4px 8px hsl(30, 10%, 85%);
-  margin-top: 5%;
+  margin-top: 2%;
   margin-bottom: 2%;
   width: 85%;
   height: 75%;
   border-radius: 10px;
+  padding: 20px;
+}
+
+.projectsContainer > div:first-child > div > div > div{
+  display: flex;
+  flex-direction: column;
+}
+
+.projectsContainer > div:first-child > div > div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5vw;
 }
 
 .buttonsContainer {
@@ -35,3 +49,14 @@
 .projectsContainer button:hover {
   box-shadow: inset -1px -3px 3px hsl(30, 10%, 96%), inset 1px 3px 3px hsl(30, 10%, 74%);
 }
+
+.projectsContainer img {
+  width: 30vw;
+  aspect-ratio: 16 / 9;
+  border-radius: 5px;
+}
+
+.projectsContainer h1 {
+  margin-bottom: 3vh;
+}
+

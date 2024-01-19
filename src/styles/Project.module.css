@@ -1,0 +1,59 @@
+
+.projectContainer > div:first-child > div > div > div{
+  display: flex;
+  flex-direction: column;
+}
+
+.projectContainer > div:first-child > div > div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5vw;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.projectContainer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 4vh;
+  color: #555;
+  padding: 5px 20px;
+  border-radius: 20px;
+  box-shadow: -4px -4px 8px hsl(30, 10%, 94%, 0.8), 4px 4px 8px hsl(30, 10%, 82%, 0.8);
+  cursor: pointer;
+}
+
+.projectContainer img {
+  width: 30vw;
+  aspect-ratio: 16 / 9;
+  border-radius: 5px;
+}
+
+.projectContainer h1 {
+  margin-bottom: 3vh;
+}
+
+.projectContainer a {
+  text-decoration: none;
+  border-radius: 100%;
+  border: none;
+  box-shadow: -4px -4px 8px hsl(30, 10%, 96%, 0.8), 1px 2px 8px hsl(30, 10%, 80%);
+  width: fit-content;
+  padding: 0.8rem;
+  margin-top: 1vh;
+}
+
+.projectContainer a:hover {
+  box-shadow: inset -4px -4px 8px hsl(30, 10%, 96%, 0.8), inset 1px 2px 8px hsl(30, 10%, 70%);
+}
+
+.buttonsContainer {
+  width: 100%;
+  display: flex;
+}
