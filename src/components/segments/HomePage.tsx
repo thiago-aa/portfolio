@@ -10,9 +10,9 @@ export default function HomePage() {
         <p><span className={styles.firstLine}>Meu nome é</span><br /><span className={styles.name}>Thiago Alves de Almeida,</span><br /><span className={styles.about}>desenvolvedor Front-End,</span><br /><span className={styles.lastLine}>e esse é meu portfólio</span></p>
       </div>
       <div className={styles.buttonsContainer}>
-        <button className={styles.linkedinButton}><LinkedInIcon className={styles.linkedinColor}/></button>
-        <button className={styles.githubButton}><GitHubIcon className={styles.githubColor}/></button>
-        <button className={styles.codeButton}><EmailIcon className={styles.mailColor}/></button>
+        <a className={styles.linkedinButton} href="https://www.linkedin.com/in/thiago-almeida22/" target='_blank'><LinkedInIcon className={styles.linkedinColor}/></a>
+        <a className={styles.githubButton} href="https://github.com/thiago-aa" target='_blank'><GitHubIcon className={styles.githubColor}/></a>
+        <a className={styles.codeButton} href="mailto:almeida.thiagoalvesde@gmail.com" target='_blank'><EmailIcon className={styles.mailColor}/></a>
       </div>
     </div>
   )

@@ -33,20 +33,32 @@
   width: 70%;
 }
 
-.projectsContainer button {
+.projectButton {
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   height: 4vh;
-  color: #555;
+  color: #444;
   padding: 5px 20px;
   border-radius: 20px;
   box-shadow: -4px -4px 8px hsl(30, 10%, 94%, 0.8), 4px 4px 8px hsl(30, 10%, 82%, 0.8);
   cursor: pointer;
 }
 
-.projectsContainer button:hover {
+.projectButton:hover {
+  box-shadow: inset -1px -3px 3px hsl(30, 10%, 96%), inset 1px 3px 3px hsl(30, 10%, 74%);
+}
+
+.projectButtonSelected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 4vh;
+  color: #444;
+  padding: 5px 20px;
+  border-radius: 20px;
   box-shadow: inset -1px -3px 3px hsl(30, 10%, 96%), inset 1px 3px 3px hsl(30, 10%, 74%);
 }
 
@@ -60,3 +72,15 @@
   margin-bottom: 3vh;
 }
 
+.projectsContainer h2 {
+  margin: 10px 0;
+}
+
+.tech {
+    border-radius: 100%;
+    background: linear-gradient(145deg, hsl(30, 10%, 94%), hsl(30, 10%, 80%));
+    box-shadow:  5px 5px 60px hsl(30, 10%, 76%), -5px -5px 60px hsl(30, 10%, 96%);
+    padding: 14px;
+    margin: 8px;
+    font-size: 2rem;
+}
