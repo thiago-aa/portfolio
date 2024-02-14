@@ -27,7 +27,7 @@
     align-items: center;
     border-radius: 100%;
     box-shadow: inset -4px -4px 8px hsl(30, 10%, 96%, 0.8), inset 1px 2px 8px hsl(30, 10%, 70%);
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
   }
   .container {
     display: flex;
