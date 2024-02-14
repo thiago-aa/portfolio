@@ -7,17 +7,14 @@ interface SideMenuProps {
 
 export default function SideMenu(props: SideMenuProps){
   const {setPage, page} = props;
-  console.log(page === 'Home' ? ' styles.buttonActivated' : 'styles.legal');
   return (
     <nav className={styles.container}>
       <div>
         <span>          
           <img src="/imgs/eu.jpg" alt="a foto do cara ae" />
         </span>
-        {/* <p>
-          <h1>Thiago Alves de Almeida</h1>
-          <h2>Desenvolvedor Front-End</h2>
-        </p> */}
+        <h1>Thiago Alves de Almeida</h1>
+        <h2>Desenvolvedor Front-End</h2>
         <a onClick={(e: any) => setPage(e.target.textContent)} className={page === 'Home' ? styles.buttonActivated : styles.button}>Home</a>
         <a onClick={(e: any) => setPage(e.target.textContent)} className={page === 'Sobre Mim' ? styles.buttonActivated : styles.button}>Sobre Mim</a>
         <a onClick={(e: any) => setPage(e.target.textContent)} className={page === 'Certificados' ? styles.buttonActivated : styles.button}>Certificados</a>

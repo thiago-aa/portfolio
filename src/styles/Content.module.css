@@ -1,15 +1,30 @@
 .container {
   width: 73vw;
+  height: 90vh;
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: center;
 }
 
 .container > div {
-  height: 85%;
+  height: 98%;
   width: 90%;
   border-radius: 8px;
   box-shadow:  inset -4px -4px 8px hsl(30, 10%, 87%), inset 4px 4px 8px hsl(30, 10%, 85%);
   overflow-y: auto;
 }
 
+@media only screen and (max-width: 800px) {
+  .container {
+    /* border: solid 1px purple; */
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    z-index: 1;
+  }
+
+  .container > div {
+    /* border: solid 1px green; */
+  }
+}

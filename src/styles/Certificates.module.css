@@ -18,7 +18,8 @@
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
-  box-shadow: inset -1px -3px 3px hsl(30, 10%, 84%), inset 1px 3px 3px hsl(30, 10%, 74%);
+  /* box-shadow: inset -1px -3px 3px hsl(30, 10%, 84%), inset 1px 3px 3px hsl(30, 10%, 74%); */
+  box-shadow: -4px -4px 10px hsl(30, 10%, 93%), 4px 4px 10px hsl(30, 10%, 80%);
 }
 
 .certificatesContainer img {
@@ -28,6 +29,7 @@
 }
 
 .certificatesContainer h2 {
+  text-align: center;
   font-size: 1.2rem;
 }
 
@@ -38,4 +40,24 @@
 
 .certificatesContainer a {
   width: 60%;
+}
+
+.certificatesContainer h1 {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .certificatesContainer > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .certificatesContainer {
+    padding: 1vh;
+  }
+
+  .certificatesContainer h1 {
+    text-align: center;
+    display: block;
+  }
 }

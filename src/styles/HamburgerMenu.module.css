@@ -1,0 +1,114 @@
+.hamburgerMenu {
+  display: none;
+}
+
+.hamburgerMenu div {
+  width: 3.5vh;
+  height: 3px;
+  margin: 2px;
+  background-color: #777;
+}
+
+.menuVisible {
+  display: none;
+}
+
+.hiddenMenu {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .hamburgerMenu {
+    width: 6vh;
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    box-shadow: inset -4px -4px 8px hsl(30, 10%, 96%, 0.8), inset 1px 2px 8px hsl(30, 10%, 70%);
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menuVisible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 9vh;
+    border-radius: 10px;
+    flex-direction: column;
+    height: 60vh;
+    width: 70%;
+    box-shadow: -1px -1px 1px hsl(30, 10%, 93%, 0.8), 1px 1px 1px hsl(30, 10%, 93%);
+    animation: expandMenu 0.3s forwards;
+  }
+
+  .menuVisible span {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding: 10px;
+    box-shadow: inset -1px -3px 3px hsl(30, 10%, 84%), inset 1px 3px 3px hsl(30, 10%, 74%);
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .menuVisible img {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 100%;
+  }
+
+  .hiddenMenu {
+    display: none;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 4vh;
+    width: 50%;
+    margin-top: 3vh;
+    color: #444;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: -4px -4px 8px hsl(30, 10%, 94%, 0.8), 4px 4px 8px hsl(30, 10%, 82%, 0.8);
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    box-shadow: inset -1px -3px 3px hsl(30, 10%, 96%), inset 1px 3px 3px hsl(30, 10%, 74%);
+  }
+  
+  .buttonActivated {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 4vh;
+    width: 50%;
+    margin-top: 3vh;
+    color: #444;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: -4px -4px 8px hsl(30, 10%, 94%, 0.8), 4px 4px 8px hsl(30, 10%, 82%, 0.8);
+    cursor: pointer;
+    box-shadow: inset -1px -3px 3px hsl(30, 10%, 96%), inset 1px 3px 3px hsl(30, 10%, 74%);
+  }
+}
+
+@keyframes expandMenu {
+  from {
+    height: 0; 
+  }
+  to {
+    height: 60vh;
+  }
+}

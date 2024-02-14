@@ -5,6 +5,14 @@ export default function Certificates(){
   return (
     <div className={styles.certificatesContainer}>
       <div>
+        <h1 className={styles.title}>Certificados</h1>
+        <Certificate 
+          title='Análise e Desenvolvimento de Sistemas' 
+          img='imgs/adsCertificate.png'
+          url='imgs/adsCertificate.png' 
+        >          
+          Diploma de curso superior em Análise e Desenvolvimento de Sistemas na Fatec Sorocaba
+        </Certificate>
         <Certificate 
           title='Basic HTML and HTML5' 
           img='imgs/htmlCertificate.png'
@@ -21,13 +29,6 @@ export default function Certificates(){
         </Certificate>
         <Certificate title='Next.js e React - Aprenda com Projetos' img='imgs/nextCertificate.jpg' url='https://www.udemy.com/certificate/UC-f7d39776-fcd6-455b-aee0-8d1e450b90e8/'>          
           Certificação em Next.js e react, com diversos projetos para fim didáticos
-        </Certificate>
-        <Certificate 
-          title='Análise e Desenvolvimento de Sistemas' 
-          img='imgs/adsCertificate.png'
-          url='imgs/adsCertificate.png' 
-        >          
-          Diploma de curso superior em Análise e Desenvolvimento de Sistemas na Fatec Sorocaba
         </Certificate>
       </div>
     </div>

@@ -18,25 +18,17 @@ export default function Project(props: ProjectProps) {
   return (
     <div className={styles.projectContainer}>
       <div>        
-        <div className={styles.descriptionWide} key={1}>
-          <h1>{title}</h1>
-          <p>
-            {children}
-          </p>
-        </div>
         <div className={styles.imgContainer}>        
+        <h1>{title}</h1>
+        <p>
+          {children}
+        </p>
+        </div>
           <img src={imgUrl} alt={`Screenshot do app ${title}`} />
           <div className={styles.buttonsContainer}>            
             <a href={repoUrl} target="_blank"><GitHubIcon style={{color: 'black'}}/></a>
             <a href={siteUrl} target="_blank"><LanguageIcon style={{color: '#68B3DB'}}/></a>
           </div>
-        </div>
-        <div className={styles.descriptionMobile} key={2}>
-          <h1>{title}</h1>
-          <p>
-            {children}
-          </p>
-        </div>
       </div>
     </div>
   )

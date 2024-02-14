@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  height: 100vh;
+  width: 100vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px magenta; */
+  }
+  .contentContainer {
+    height: 92vh;
+    /* border: solid 1px green; */
+    padding: 2vh 0;
+    /* display: flex;
+    align-items: center; */
+  }
+
+  .hamburgerMenuContainer {
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    /* border: solid 2px yellow; */
+  }
+}
