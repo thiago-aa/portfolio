@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0px;
   background-color:hsl(30, 10%, 90%);
+  
   /* Estilização da barra de rolagem */
 ::-webkit-scrollbar {
   width: 12px; /* Largura da barra de rolagem */
@@ -41,6 +42,12 @@ html {
 @media (max-width: 1350px) {
   html {
     font-size: 13px; 
+  }
+}
+
+@media (max-width: 1350px) {
+  ::-webkit-scrollbar {
+    width: 6px; /* Largura da barra de rolagem */
   }
 }
 
