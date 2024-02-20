@@ -1,7 +1,7 @@
 export default function Analytics() {
   return (
     <>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNR1VQD92H"></script>
+      <script async={true} src="https://www.googletagmanager.com/gtag/js?id=G-ZNR1VQD92H"></script>
         <script dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
