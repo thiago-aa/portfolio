@@ -28,14 +28,16 @@ export default function Projects(){
   const renderProject = (projectNumber: number) => {
     if(projectNumber === 1) {
       return (
-        <Project 
-          title='Multitwitch'
-          imgUrl='https://raw.githubusercontent.com/thiago-aa/multitwitch/main/public/prints/home.png'
-          repoUrl='https://github.com/thiago-aa/multitwitch'
-          siteUrl='https://multitwitch-one.vercel.app/'
-          key={1}
+        <Project
+          title='Playlist Generator'
+          imgUrl='imgs/playlistGenerator.png'
+          repoUrl='https://github.com/thiago-aa/spotify-playlists-tools'
+          siteUrl='https://spotify-playlists-tools.vercel.app/'
+          key={projectNumber}
         >
-          Multitwitch é uma aplicação web que proporciona aos usuários a experiência de assistir a múltiplas streams da Twitch em uma única página. O diferencial da plataforma reside na flexibilidade oferecida, permitindo que os usuários diferentes numeros de transmissões de acordo com suas preferências. Além disso, a aplicação incorpora validação de entrada para garantir a integridade e precisão das informações fornecidas pelos usuários.
+          Um gerador de playlists usando a <strong>API do Spotify</strong>. A partir da seleção de artistas, o aplicativo irá gerar e adicionar à biblioteca do usuário uma playlist contendo as top 10 músicas mais tocadas de cada artista.
+          <br />
+          Aviso: O site ainda está em desenvolvimento, caso desejado testar sua funcionalidade, me envie um email contendo seu nome e o email cadastrado ao seu perfil do Spotify
           <h2>Tecnologias Usadas</h2>
           <span><ReactIcon className={styles.tech} fill="#0284C7"/></span>
           <span><IconNextjs className={styles.tech}/></span>
@@ -46,13 +48,13 @@ export default function Projects(){
     if(projectNumber === 2) {
       return (
         <Project 
-          title='Jogo das Portas'
-          imgUrl='imgs/jogoPortas.png'
-          repoUrl='https://github.com/thiago-aa/estudosNextReact/tree/main/portas'
-          siteUrl='https://estudos-next-react.vercel.app/'
-          key={2}
+          title='Multitwitch'
+          imgUrl='https://raw.githubusercontent.com/thiago-aa/multitwitch/main/public/prints/home.png'
+          repoUrl='https://github.com/thiago-aa/multitwitch'
+          siteUrl='https://multitwitch-one.vercel.app/'
+          key={projectNumber}
         >
-          Jogo das Portas é uma aplicação web que replica o jogo "Let's Make a Deal", onde o jogador deve encontrar a porta onde está escondido o prêmio. A aplicação permite a personalização do número de portas presentes no jogo tal qual a seleção da porta premiada.
+          Multitwitch é uma aplicação web que proporciona aos usuários a experiência de assistir a múltiplas streams da Twitch em uma única página. O diferencial da plataforma reside na flexibilidade oferecida, permitindo que os usuários diferentes numeros de transmissões de acordo com suas preferências. Além disso, a aplicação incorpora validação de entrada para garantir a integridade e precisão das informações fornecidas pelos usuários.
           <h2>Tecnologias Usadas</h2>
           <span><ReactIcon className={styles.tech} fill="#0284C7"/></span>
           <span><IconNextjs className={styles.tech}/></span>
@@ -63,11 +65,28 @@ export default function Projects(){
     if(projectNumber === 3) {
       return (
         <Project 
+          title='Jogo das Portas'
+          imgUrl='imgs/jogoPortas.png'
+          repoUrl='https://github.com/thiago-aa/estudosNextReact/tree/main/portas'
+          siteUrl='https://estudos-next-react.vercel.app/'
+          key={projectNumber}
+        >
+          Jogo das Portas é uma aplicação web que replica o jogo "Let's Make a Deal", onde o jogador deve encontrar a porta onde está escondido o prêmio. A aplicação permite a personalização do número de portas presentes no jogo tal qual a seleção da porta premiada.
+          <h2>Tecnologias Usadas</h2>
+          <span><ReactIcon className={styles.tech} fill="#0284C7"/></span>
+          <span><IconNextjs className={styles.tech}/></span>
+          <span><IconTypescript className={styles.tech} fill='#2F74C0'/></span>
+        </Project>
+      )
+    }
+    if(projectNumber === 4) {
+      return (
+        <Project 
           title='Quiz'
           imgUrl='imgs/quiz.png'
           repoUrl='https://github.com/thiago-aa/estudosNextReact/tree/main/quiz'
           siteUrl='https://quiz-five-gray.vercel.app/'
-          key={3}
+          key={projectNumber}
         >
           Aplicação web de um quiz sobre conhecimentos gerais. Contém temporizador para cada pergunta, revelação do acerto/erro e exibição da pontuação final
           <h2>Tecnologias Usadas</h2>
@@ -88,17 +107,23 @@ export default function Projects(){
           onClick={() => setProject(1)}
           className={project === 1 ? styles.projectButtonSelected : styles.projectButton}
         >
-          Multitwitch
+          Playlist Generator
         </button>
         <button 
           onClick={() => setProject(2)}
           className={project === 2 ? styles.projectButtonSelected : styles.projectButton}
         >
-          Portas
+          Multitwitch
         </button>
         <button 
           onClick={() => setProject(3)}
           className={project === 3 ? styles.projectButtonSelected : styles.projectButton}
+        >
+          Portas
+        </button>
+        <button 
+          onClick={() => setProject(4)}
+          className={project === 4 ? styles.projectButtonSelected : styles.projectButton}
         >
           Quiz
         </button>

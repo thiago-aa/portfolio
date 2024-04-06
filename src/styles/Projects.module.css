@@ -40,10 +40,10 @@
   justify-content: center;
   border: none;
   width: 20%;
-  height: 4vh;
+  height: 7vh;
   color: #444;
   padding: 5px 20px;
-  border-radius: 20px;
+  border-radius: 40px;
   box-shadow: -4px -4px 8px hsl(30, 10%, 94%, 0.8), 4px 4px 8px hsl(30, 10%, 82%, 0.8);
   cursor: pointer;
 }
@@ -57,19 +57,14 @@
   align-items: center;
   justify-content: center;
   border: none;
-  height: 4vh;
+  height: 7vh;
   width: 20%;
   color: #444;
   padding: 5px 20px;
-  border-radius: 20px;
+  border-radius: 40px;
   box-shadow: inset -1px -3px 3px hsl(30, 10%, 96%), inset 1px 3px 3px hsl(30, 10%, 74%);
 }
 
-.projectsContainer img {
-  width: 30vw;
-  aspect-ratio: 16 / 9;
-  border-radius: 5px;
-}
 
 .projectsContainer  h1 {
   margin-bottom: 3vh;
