@@ -9,7 +9,7 @@ export default function About(){
         <h2>Sobre Mim</h2>
         <p>
           Olá! Meu nome é <strong>Thiago Alves de Almeida</strong>, um entusiasta apaixonado por desenvolvimento web,
-          atualmente residindo em Sorocaba tenho 23 anos de idade e sou formado em <strong>Análise e Desenvolvimento de
+          atualmente residindo em Sorocaba tenho 24 anos de idade e sou formado em <strong>Análise e Desenvolvimento de
           Sistemas</strong> pela <strong>Fatec Sorocaba</strong>, estou comprometido em trazer soluções criativas e
           eficientes para desafios no universo do front-end.
         </p>

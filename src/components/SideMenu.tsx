@@ -11,7 +11,7 @@ export default function SideMenu(props: SideMenuProps){
     <nav className={styles.container}>
       <div>
         <span>          
-          <img src="/imgs/eu.jpg" alt="a foto do cara ae" />
+          <img src="/imgs/eu.jpg" alt="Minha foto" />
         </span>
         <h1>Thiago Alves de Almeida</h1>
         <h2>Desenvolvedor Front-End</h2>

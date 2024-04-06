@@ -83,6 +83,7 @@
 .container img {
   height: 10vw;
   width: 10vw;
+  object-fit: cover;
   border-radius: 100%;
 }
 
