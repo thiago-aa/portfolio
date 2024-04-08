@@ -18,7 +18,7 @@ export default function HamburgerMenu(props: HamburgerMenuInterface) {
     <div className={styles.container}>
       <div className={menuVisibility ? styles.menuVisible : styles.hiddenMenu} >
         <span className={styles.imgContainer}>          
-          <img src="/imgs/eu.jpg" alt="a foto do cara ae" />
+          <img src="/imgs/eu.jpg" alt="foto de perfil" />
         </span>
         <a onClick={(e: any) => handleButtonClick(e)} className={page === 'Home' ? styles.buttonActivated : styles.button}>Home</a>
         <a onClick={(e: any) => handleButtonClick(e)} className={page === 'Sobre Mim' ? styles.buttonActivated : styles.button}>Sobre Mim</a>
