@@ -57,9 +57,21 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .imgContainer {
+  .projectContainer {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projectContainer > div {
     display: flex;
     align-items: center;
+    text-align: center;
+  }
+  .imgContainer {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding: auto;
   }
 
   .descriptionWide p{

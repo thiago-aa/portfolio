@@ -11,14 +11,14 @@ export default function Projects(){
 
   const handleArrowButton = (direction: 'forward' | 'back') => {
     if(direction === 'forward') {
-      if(project === 3) {
+      if(project === 4) {
         setProject(1);
       } else {
         setProject(project + 1);
       }
     } else {
       if(project === 1) {
-        setProject(3);
+        setProject(4);
       } else {
         setProject(project - 1);
       }
@@ -128,14 +128,17 @@ export default function Projects(){
           Quiz
         </button>
       </div>
+      {/* Menu para o Mobile */}
       <div className={styles.arrowMenuContainer}>
         <button onClick={() =>  handleArrowButton('back')}><ArrowBackIcon/></button>
         <h1>
           {
             project === 1 ? (
-              'Multitwitch'
+              'Playlist Generator'
             ) : project === 2 ? (
-              'Portas'
+              'Multitwitch'
+            ) : project === 3 ?(
+              "Portas"
             ) : (
               "Quiz"
             )
