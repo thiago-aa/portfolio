@@ -13,8 +13,12 @@ export default function SideMenu(props: SideMenuProps){
         <span>          
           <img src="/imgs/eu.jpg" alt="Minha foto" />
         </span>
-        <h1>Thiago Alves de Almeida</h1>
-        <h2>Desenvolvedor Front-End</h2>
+        {page === 'Home' ? null : (
+          <>
+            <h1>Thiago Alves de Almeida</h1>
+            <h2>Desenvolvedor Front-End</h2>
+          </>
+        )}
         <a onClick={(e: any) => setPage(e.target.textContent)} className={page === 'Home' ? styles.buttonActivated : styles.button}>Home</a>
         <a onClick={(e: any) => setPage(e.target.textContent)} className={page === 'Sobre Mim' ? styles.buttonActivated : styles.button}>Sobre Mim</a>
         <a onClick={(e: any) => setPage(e.target.textContent)} className={page === 'Certificados' ? styles.buttonActivated : styles.button}>Certificados</a>
