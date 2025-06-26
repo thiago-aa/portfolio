@@ -65,13 +65,13 @@ export default function Projects(){
     if(projectNumber === 3) {
       return (
         <Project 
-          title='Jogo das Portas'
-          imgUrl='imgs/jogoPortas.png'
-          repoUrl='https://github.com/thiago-aa/estudosNextReact/tree/main/portas'
-          siteUrl='https://estudos-next-react.vercel.app/'
+          title='Landing Page RDS'
+          imgUrl='imgs/rdsLP.png'
+          repoUrl=''
+          siteUrl='https://rdigitalsucess.com.br/'
           key={projectNumber}
         >
-          Jogo das Portas é uma aplicação web que replica o jogo "Let's Make a Deal", onde o jogador deve encontrar a porta onde está escondido o prêmio. A aplicação permite a personalização do número de portas presentes no jogo tal qual a seleção da porta premiada.
+          Landing page desenvolvida para a empresa R Digital Success, especializada em marketing digital. O objetivo da página é apresentar os serviços da empresa e captar leads por meio de um botão com chamada para ação (call to action).
           <h2>Tecnologias Usadas</h2>
           <span><ReactIcon className={styles.tech} fill="#0284C7"/></span>
           <span><IconNextjs className={styles.tech}/></span>
@@ -119,7 +119,7 @@ export default function Projects(){
           onClick={() => setProject(3)}
           className={project === 3 ? styles.projectButtonSelected : styles.projectButton}
         >
-          Portas
+          Landing Page RDS
         </button>
         <button 
           onClick={() => setProject(4)}
@@ -138,7 +138,7 @@ export default function Projects(){
             ) : project === 2 ? (
               'Multitwitch'
             ) : project === 3 ?(
-              "Portas"
+              "Landing Page RDS"
             ) : (
               "Quiz"
             )

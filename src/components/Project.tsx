@@ -27,7 +27,7 @@ export default function Project(props: ProjectProps) {
         <div className={styles.imgContainer}>        
           <img src={imgUrl} alt={`Screenshot do app ${title}`} />
           <div className={styles.buttonsContainer}>            
-            <a href={repoUrl} target="_blank"><GitHubIcon style={{color: 'black'}}/></a>
+            {repoUrl ? <a href={repoUrl} target="_blank"><GitHubIcon style={{color: 'black'}}/></a> : null}
             <a href={siteUrl} target="_blank"><LanguageIcon style={{color: '#68B3DB'}}/></a>
           </div>
         </div>
