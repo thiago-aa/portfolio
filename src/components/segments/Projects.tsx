@@ -26,7 +26,7 @@ export default function Projects(){
   }
 
   const renderProject = (projectNumber: number) => {
-    if(projectNumber === 1) {
+    if(projectNumber === 2) {
       return (
         <Project
           title='Playlist Generator'
@@ -45,7 +45,7 @@ export default function Projects(){
         </Project>
       )
     }
-    if(projectNumber === 2) {
+    if(projectNumber === 3) {
       return (
         <Project 
           title='Multitwitch'
@@ -62,13 +62,13 @@ export default function Projects(){
         </Project>
       )
     }
-    if(projectNumber === 3) {
+    if(projectNumber === 1) {
       return (
         <Project 
           title='Landing Page RDS'
           imgUrl='imgs/rdsLP.png'
           repoUrl=''
-          siteUrl='https://rdigitalsucess.com.br/'
+          siteUrl='https://landing-page-rds.vercel.app/'
           key={projectNumber}
         >
           Landing page desenvolvida para a empresa R Digital Success, especializada em marketing digital. O objetivo da página é apresentar os serviços da empresa e captar leads por meio de um botão com chamada para ação (call to action).
@@ -107,19 +107,19 @@ export default function Projects(){
           onClick={() => setProject(1)}
           className={project === 1 ? styles.projectButtonSelected : styles.projectButton}
         >
-          Playlist Generator
+          Landing Page RDS
         </button>
         <button 
           onClick={() => setProject(2)}
           className={project === 2 ? styles.projectButtonSelected : styles.projectButton}
         >
-          Multitwitch
+          Playlist Generator
         </button>
         <button 
           onClick={() => setProject(3)}
           className={project === 3 ? styles.projectButtonSelected : styles.projectButton}
         >
-          Landing Page RDS
+          Multitwitch
         </button>
         <button 
           onClick={() => setProject(4)}
@@ -134,11 +134,11 @@ export default function Projects(){
         <h1>
           {
             project === 1 ? (
-              'Playlist Generator'
+              'Landing Page RDS'
             ) : project === 2 ? (
-              'Multitwitch'
+              'Playlist Generator'
             ) : project === 3 ?(
-              "Landing Page RDS"
+              "Multitwitch"
             ) : (
               "Quiz"
             )
