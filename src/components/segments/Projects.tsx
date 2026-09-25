@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from '../../styles/Projects.module.css'
 import Project from '../Project'
-import {IconNextjs, IconTypescript, ReactIcon} from '../icons/index'
+import {IconNextjs, IconTailwind, IconTypescript, ReactIcon} from '../icons/index'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
@@ -82,17 +82,18 @@ export default function Projects(){
     if(projectNumber === 4) {
       return (
         <Project 
-          title='Quiz'
-          imgUrl='imgs/quiz.png'
-          repoUrl='https://github.com/thiago-aa/estudosNextReact/tree/main/quiz'
-          siteUrl='https://quiz-five-gray.vercel.app/'
+          title='Cann Table Brasileirão'
+          imgUrl='imgs/cannTable.png'
+          repoUrl='https://github.com/thiago-aa/brasileirao-cann-table'
+          siteUrl='https://brasileirao-cann-table.vercel.app/'
           key={projectNumber}
         >
-          Aplicação web de um quiz sobre conhecimentos gerais. Contém temporizador para cada pergunta, revelação do acerto/erro e exibição da pontuação final
+          Visualização alternativa da tabela de classificação do Campeonato Brasileiro no estilo <a href="https://en.wikipedia.org/wiki/Cann_table" target='_blank' className={styles.descriptionLink}>Cann Table</a>, onde cada linha representa exatamente um ponto — a distância visual entre os times reflete a diferença real de pontuação.
           <h2>Tecnologias Usadas</h2>
           <span><ReactIcon className={styles.tech} fill="#0284C7"/></span>
           <span><IconNextjs className={styles.tech}/></span>
           <span><IconTypescript className={styles.tech} fill='#2F74C0'/></span>
+          <span><IconTailwind className={styles.tech} fill='#36B7F0'/></span>
         </Project>
       )
     }
@@ -125,7 +126,7 @@ export default function Projects(){
           onClick={() => setProject(4)}
           className={project === 4 ? styles.projectButtonSelected : styles.projectButton}
         >
-          Quiz
+          Cann Table
         </button>
       </div>
       {/* Menu para o Mobile */}
@@ -140,7 +141,7 @@ export default function Projects(){
             ) : project === 3 ?(
               "Multitwitch"
             ) : (
-              "Quiz"
+              "Cann Table"
             )
           }
         </h1>

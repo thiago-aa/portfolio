@@ -87,6 +87,10 @@
   display: none;
 }
 
+.descriptionLink {
+  color: hsl(205, 51%, 45%);
+}
+
 @media only screen and (max-width: 800px) {
   .projectsContainer {
   
